@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:background="@drawable/gradient_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/gradient_bg"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgShop"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/circle_bg"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_shop"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/imgShop"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mexican Bike"
+                    android:padding="2dp"
+                    android:textColor="@color/primaryText"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.0"
+                    android:padding="1dp"
+                    android:textColor="@color/primaryText"
+                    android:textSize="15sp" />
+
+                <RatingBar
+                    android:id="@+id/rating_bar"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:numStars="6"
+                    android:padding="3dp"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:stepSize="0.5"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_navigation"
+                android:background="@drawable/circle_blue_bg"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivFood"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/myanmar_food"
+                android:clickable="true"
+                android:scaleType="centerCrop"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/tvFoodDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:scrollbarStyle="insideOverlay"
+                    android:textColor="@color/primaryText"
+                    android:textSize="18sp"
+                    android:text="hello every one. blah blah blah"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.design.card.MaterialCardView>

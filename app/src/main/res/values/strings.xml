@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Restaurant</string>
+
+    <string name="main_navigation_first">Adjust</string>
+    <string name="main_navigation_all">All</string>
+    <string name="main_navigation_camera">Camera</string>
+    <string name="main_navigation_notification">Notification</string>
+    <string name="main_navigation_profile">Profile</string>
+
+    <string name="bottom_navigation_detail">DETAILS</string>
+    <string name="bottom_navigation_menu">MENU</string>
+    <string name="bottom_navigation_review">REVIEWS</string>
+
+    <string name="searchview_hint">Search..</string>
+</resources>

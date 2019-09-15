@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activities.DetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:id="@+id/ivDetail"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/myanmar_food"
+            android:scaleType="centerCrop"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/detail_card_layout"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="center|bottom"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+
+</android.support.design.widget.CoordinatorLayout>
